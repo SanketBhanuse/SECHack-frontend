@@ -51,15 +51,15 @@ const ImageDragger = () => {
                 {/* Right Side - Drag & Drop / AI-Generated Image */}
                 {!generatedImage ? (
                     <div
-                        className="border-2 border-dashed border-gray-400 p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center justify-center text-center cursor-pointer"
+                        className="border-2 border-dashed border-[#1E3D58] p-6 rounded-lg shadow-md bg-gray-50 flex flex-col items-center justify-center text-center cursor-pointer"
                         onDragOver={(e) => e.preventDefault()}
                         onDrop={handleDrop}
                     >
-                        <p className="text-gray-600 mb-3">Drag & Drop an Image Here</p>
-                        <p className="text-gray-400 text-sm">or</p>
+                        <p className="text-[#1E3D58] mb-3">Drag & Drop an Image Here</p>
+                        <p className="text-[#1E3D58] text-sm">or</p>
 
                         {/* Upload Button */}
-                        <label className="mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer hover:bg-blue-700">
+                        <label className="px-5 py-2 bg-[#1E3D58] text-[#E8EEF1] cursor-pointer hover:bg-[#057DCD] hover:scale-105 rounded-sm shadow-md shadow-black">
                             Select Image
                             <input type="file" className="hidden" accept="image/*" onChange={handleFileChange} />
                         </label>
@@ -69,7 +69,7 @@ const ImageDragger = () => {
                         <img src={generatedImage} alt="Generated Preview" className="w-full h-auto rounded-lg" />
                         <button
                             onClick={resetUpload}
-                            className="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 rounded-md text-sm"
+                            className="absolute top-2 right-2 px-5 py-2 bg-[#1E3D58] text-[#E8EEF1] cursor-pointer hover:bg-[#057DCD] hover:scale-105 rounded-sm shadow-md shadow-black"
                         >
                             Back
                         </button>
